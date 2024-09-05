@@ -10,9 +10,11 @@
 main color : #e67e22
   
 Tints: #fdf2e9 #fae5d3
-Shades: #cf711f
+Shades: #cf711f #eb984e
 Accents:
-Greys: #555 #333 #343a40
+Greys: #555 #333 #343a40 #6f6f6f 
+ #888(lightest gray allowed on #fdf2e9)
+ #767676(lightest gray allowed on #fff)
 
 ----Shadows
 
@@ -368,4 +370,338 @@ body {
 .all-recipies {
   text-align: center;
   font-size: 1.8rem;
+}
+
+/* ********************************************* */
+/*TESTIMONIAL SECION */
+/* ********************************************** */
+
+.section-testimonials {
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.testimonials-container {
+  padding: 9.6rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+  align-items: center;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.gallery-item {
+  margin: 0;
+  overflow: hidden;
+  /* height: 22.413rem; */
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+  /* height: 100%; */
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/* ********************************************* */
+/*PRICING SECION */
+/* ********************************************** */
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+.pricing-plan {
+  border-radius: 1.2rem;
+  width: 75%;
+}
+.pricing-plan-complete {
+  background-color: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.pricing-plan-complete::after {
+  content: "Best Value";
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  color: #333;
+  top: 6%;
+  right: -18%;
+  transform: rotate(45deg);
+}
+
+.pricing-plan-complete:hover,
+.plan-1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.075);
+}
+
+.plan-1 {
+  padding: 4.6rem;
+  border: 0.2rem solid #fdf2e9;
+  justify-self: end;
+  transition: all 0.4s;
+}
+.plan-header {
+  padding: 4.8rem;
+  text-align: center;
+  margin-bottom: 4.6rem;
+}
+
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.feature-icon {
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-bottom: 3.2rem;
+  background-color: #fdf2e9;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+}
+
+/* ********************************************* */
+/*CTA SECION */
+/* ********************************************** */
+
+.section-cta {
+  padding: 4.8rem 0 12.8rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.2rem;
+
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+
+  /*   temp- height
+  height: 50rem; */
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45360a;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta .heading-secondary {
+  color: #45360a;
+  margin-bottom: 3.2rem;
+}
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.349),
+      rgba(230, 125, 34, 0.349)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+  /* border-radius: 0 1.2rem 1.2rem 0; */
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 1rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+/* ********************************************* */
+/*FOOTER*/
+/* ********************************************* */
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.grid-footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social.icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.copyright {
+  margin-top: auto;
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.6;
+}
+
+.contacts p:first-child {
+  margin-bottom: 2.4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
 }
