@@ -118,6 +118,7 @@ breakpoints: 1 1300px = 1300/16 = 84.375 em (approx 84em) */
   /* MOBILE NAVIGATION */
   .btn-mobile-nav {
     display: block;
+    z-index: 1000;
   }
 
   .main-nav {
