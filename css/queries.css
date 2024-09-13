@@ -122,7 +122,10 @@ breakpoints: 1 1300px = 1300/16 = 84.375 em (approx 84em) */
   }
 
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.951);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
     position: absolute;
     top: 0;
     left: 0;
